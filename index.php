@@ -1,10 +1,10 @@
 <?php
-define('BOT_TOKEN','TOKEN');
+define('BOT_TOKEN','378504326:AAFz_8gHHUjilz-N_ngHpXNFUOeTbZf7QWI');
 $admin = ADMIN;
 $channel = file_get_contents('channel.txt');
 $update = json_decode(urldecode(file_get_contents('php://input')));
-$user_id = $update->message->from->id;
-$chat_id = $update->message->chat->id;
+$user_id = $update->message->from->302877844;
+$chat_id = $update->message->chat->viewTEXT;
 $name = $update->message->from->first_name;
 $text = $update->message->text;
 $msg_id = $update->message->message_id;
